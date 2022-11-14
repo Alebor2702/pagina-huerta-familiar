@@ -1,0 +1,1134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+
+/* 
+:root{
+    --padding-container: 100%;
+    --color--title: #001a49;
+} */
+
+body {
+     font-family: 'Poppins', sans-serif;
+ }
+
+.container{
+    width:90%;
+    max-width: 3000px ;
+    margin: 0 auto;
+    overflow: hidden;
+    
+    padding: var(--padding-container);
+
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+}
+
+.hero::before{
+    content: "";
+
+    left: 0;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg,#0000008c 0%,#0000008c 100% ),url('../images/huerta.jpg');
+    background-attachment: fixed;
+
+    z-index: -1;
+}
+
+.nav{
+    --padding-container:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav__title{
+    font-weight: 300;
+    
+}
+
+.nav__link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+.nav__items{
+    list-style: none;
+}
+
+
+.nav__menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+.nav__menu{
+    display: block;
+    width: 30px;
+
+}
+
+.nav__close{
+    display: var(--show,none);
+}
+
+
+.hero__container{
+    max-width: 800px;
+    --padding-container:0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: lem;
+    padding: bottom 100px; 
+    text-align: center;
+}
+
+.hero__title{
+    font-size: 3rem;
+}
+.hero__paragraph{
+    margin-bottom: 20px;
+}
+
+.cta{
+    display:inline-block;
+    background-color: #93D42E;
+    justify-self: center;
+    color:#fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+}
+
+
+
+
+
+
+
+/* ----------------------------------------pagina2------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* :root{
+    --padding-container1: 100px 0;
+    --color--title: #001a4b;
+} */
+
+body{
+     font-family: 'Poppins', sans-serif;
+ }
+
+.container{
+    width:90%;
+    max-width: 3000px ;
+    margin: 0 auto;
+    overflow: hidden;
+    
+    padding: var(--padding-container);
+
+}
+
+.hero1{
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+ 
+
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(180deg,#0000008c 0%,#0000008c 100% ),url('../images/huerta2.jpg'); 
+    background-size: cover;
+    z-index: -1;
+}
+
+.hero1::before{
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+ 
+
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(180deg,#0000008c 0%,#0000008c 100% ),url('../images/huerta2.jpg'); 
+    background-size: cover;
+    z-index: -1;
+} 
+.nav__title1{
+    font-weight: 300;
+    
+}
+/* 
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+body {
+    display: flex;
+
+    
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+
+
+ } 
+
+
+
+/*Menú lateral*/
+#btn-menu{
+    display: none;
+
+}
+.container-menu{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+    
+}
+.cont-menu nav{
+    transform: translateY(15%);
+}
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+/*Fin de Menù lateral*/
+
+.nav__title1{
+    font-weight: 12;
+    font-size: 60px;
+    background: #1c1c1c;
+    background: linear-gradient(180deg,#0000008c 0%,#0000008c 100% );
+    border-radius: 32px;
+
+    justify-self: center;
+    position: absolute;
+    top: 5px;
+    left: 500px;
+    
+}
+/* --------------------------------------------------------redirect tomate---------------------------------------------------------- */
+
+
+
+.cta2{
+    display:inline-block;
+    justify-self: cover;
+    background-image:url('../images/lechugas.png'); 
+    text-decoration: none;
+    padding: 600px 320px;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    background-repeat: no-repeat;
+    border:none;
+
+
+}
+
+/* --------------------------------------------------------redirect lechuga---------------------------------------------------------- */
+
+
+
+.cta1{
+    display:inline-block;
+    justify-self: cover;
+    background-image:url('../images/tomates.png'); 
+    text-decoration: none;
+    padding: 600px 320px;
+    position: absolute;
+    top: 0px;
+    left: 640px;
+    background-repeat: no-repeat;
+    border:none;
+
+
+}
+
+
+/* --------------------------------------------------------redirect culantro---------------------------------------------------------- */
+
+
+
+.cta3{
+    display:inline-block;
+    justify-self: cover;
+    background-image:url('../images/culantro.png'); 
+    text-decoration: none;
+    padding: 600px 320px;
+    position: absolute;
+    left:1280px;
+    top: 0px;
+    background-repeat: no-repeat;
+    border:none;
+
+}
+
+
+
+/* ----------------------------------------------------------paginaTomate--------------------------------------------------------------------- */
+
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width:90%;
+    max-width: 3000px ;
+    margin: 0 auto;
+    overflow: hidden;
+    
+    padding: var(--padding-container);
+
+}
+
+.hero3{
+   width: 100%;
+   height: 100vh;
+   min-height: 600px;
+   max-height: 800px;
+   position: relative;
+   display: grid;
+   grid-template-rows: 100px 1fr;
+   color: #fff;
+}
+
+.hero3::before{
+   content: "";
+
+   left: 0;
+   top: 0;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   position: fixed;
+   background-repeat: no-repeat;
+   background-size:cover;
+
+   width: 100%;
+   height: 100%;
+   background-image:url('../images/tomate.jpg');
+   background-attachment: fixed;
+
+   z-index: -1;
+}
+
+.nav3{
+   --padding-container:0;
+   height: 100%;
+   display: flex;
+   align-items: center;
+}
+
+.nav__title3{
+   font-weight: 300;
+   font-size: 150px;
+   position: relative;
+   top: 590px;
+   left: 15px;
+}
+
+.nav__link3{
+   margin-left: auto;
+   padding: 0;
+   display: grid;
+   grid-auto-flow: column;
+   grid-auto-columns: max-content;
+   gap: 2em;
+}
+.nav__items3{
+   list-style: none;
+}
+
+
+.nav__menu3{
+   margin-left: auto;
+   cursor: pointer;
+   display: none;
+}
+.nav__menu3{
+   display: block;
+   width: 30px;
+
+}
+
+.nav__close3{
+   display: var(--show,none);
+}
+
+
+.hero__container3{
+   max-width: 800px;
+   --padding-container:0;
+   display: grid;
+   grid-auto-rows: max-content;
+   align-content: center;
+   gap: lem;
+   padding: bottom 100px; 
+   text-align: center;
+}
+
+.hero__title3{
+   font-size: 3rem;
+}
+.hero__paragraph3{
+   margin-bottom: 20px;
+}
+
+
+
+/* -------------------------------------------------------------tomate------------------------------------------------------------------------------------------------ */
+
+
+
+
+
+#sliderTomate {
+    margin: 0 auto;
+    width: 3000px;
+    height: 2000px;
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+    left: -950px;
+    bottom: -350px;
+
+ }
+ #sliderTomate input[type=radio] {
+    display: none;
+ }
+ #sliderTomate label {
+    cursor:pointer;
+    text-decoration: none;
+ }
+ #slidesTomate {
+    padding: 10px;
+    border: 3px solid #ccc;
+    background-image: #fff;
+    position: relative;
+    z-index: 1;
+ }
+ #overflowTomate {
+    width: 100%;
+    overflow: hidden;
+ }
+ #slide1Tomate:checked ~ #slidesTomate .innerTomate {
+    margin-left: 0;
+ }
+ #slide2Tomate:checked ~ #slidesTomate .innerTomate {
+    margin-left: -100%;
+ }
+ #slide3Tomate:checked ~ #slidesTomate .innerTomate {
+    margin-left: -200%;
+ }
+ #slide4Tomate:checked ~ #slidesTomate .innerTomate {
+    margin-left: -300%;
+ }
+ #slidesTomate .innerTomate {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 300px;
+ }
+ #slidesTomate .slideTomate {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+ }
+ #slidesTomate .slide_1Tomate {
+   background-color: darkred;
+   background-image:url('../images/Toma1.png');;
+   background-repeat: no-repeat;
+ }
+ #slidesTomate .slide_2Tomate {
+   background-color: darkred;
+   background-image:url('../images/Toma2.png');;
+   background-repeat: no-repeat;
+ }
+ #slidesTomate .slide_3Tomate {
+   background-color: darkred;
+   background-image:url('../images/Toma3.png');;
+   background-repeat: no-repeat;
+ }
+ #slidesTomate .slide_4Tomate {
+   background-color: darkred;
+   background-image:url('../images/Toma4.png');;
+   background-repeat: no-repeat;
+ }
+ #controlsTomate {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+ }
+ #controlsTomate label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+ }
+ #controlsTomate label:hover {
+    opacity: 1;
+ }
+ #slide1Tomate:checked ~ #controlsTomate label:nth-child(2),
+ #slide2Tomate:checked ~ #controlsTomate label:nth-child(3),
+ #slide3Tomate:checked ~ #controlsTomate label:nth-child(4),
+ #slide4Tomate:checked ~ #controlsTomate label:nth-child(1) {
+    background: url('../images/rightarrow.svg') no-repeat;
+    float:right;
+    margin: 0 -50px 0 0;
+    display: block;
+ }
+ /* #slide1:checked ~ #controls label:nth-last-child(2),
+ #slide2:checked ~ #controls label:nth-last-child(3),
+ #slide3:checked ~ #controls label:nth-last-child(4),
+ #slide4:checked ~ #controls label:nth-last-child(1) {
+    background: url('../images/leftarrow.svg') no-repeat;
+    float:left;
+    margin: 0 0 0 -50px;
+    display: block;
+ } */
+ #bulletsTomate {
+    margin: 150px 0 0;
+    text-align: center;
+ }
+ #bulletsTomate label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius:100%;
+    background: #ccc;
+    margin: 0 10px;
+ }
+ #slide1Tomate:checked ~ #bulletsTomate label:nth-child(1),
+ #slide2Tomate:checked ~ #bulletsTomate label:nth-child(2),
+ #slide3Tomate:checked ~ #bulletsTomate label:nth-child(3),
+ #slide4Tomate:checked ~ #bulletsTomate label:nth-child(4) {
+    background: #444;
+ }
+ @media screen and (max-width: 900px) {
+    #slide1Tomate:checked ~ #controlsTomate label:nth-child(2),
+    #slide2Tomate:checked ~ #controlsTomate label:nth-child(3),
+    #slide3Tomate:checked ~ #controlsTomate label:nth-child(4),
+    #slide4Tomate:checked ~ #controlsTomate label:nth-child(1),
+    #slide1Tomate:checked ~ #controlsTomate label:nth-last-child(2),
+    #slide2Tomate:checked ~ #controlsTomate label:nth-last-child(3),
+    #slide3Tomate:checked ~ #controlsTomate label:nth-last-child(4),
+    #slide4Tomate:checked ~ #controlsTomate label:nth-last-child(1) {
+       margin: 0;
+    }
+    #slidesTomate {
+       max-width: calc(100% - 140px);
+       margin: 0 auto;
+    }
+ }
+
+
+ /* ----------------------------------------------------------paginaLechuga--------------------------------------------------------------------- */
+
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width:90%;
+    max-width: 3000px ;
+    margin: 0 auto;
+    overflow: hidden;
+    
+    padding: var(--padding-container);
+
+}
+
+.hero4{
+   width: 100%;
+   height: 100vh;
+   min-height: 600px;
+   max-height: 800px;
+   position: relative;
+   display: grid;
+   grid-template-rows: 100px 1fr;
+   color: #fff;
+}
+
+.hero4::before{
+   content: "";
+
+   left: 0;
+   top: 0;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   position: fixed;
+   background-repeat: no-repeat;
+   background-size:cover;
+
+   width: 100%;
+   height: 100%;
+   background-image:url('../images/fondoLechuga.png');
+   background-attachment: fixed;
+
+   z-index: -1;
+}
+
+.nav4{
+   --padding-container:0;
+   height: 100%;
+   display: flex;
+   align-items: center;
+}
+
+.nav__title4{
+   font-weight: 300;
+   font-size: 150px;
+   position: relative;
+   top: 590px;
+   left: 15px;
+}
+
+.nav__link4{
+   margin-left: auto;
+   padding: 0;
+   display: grid;
+   grid-auto-flow: column;
+   grid-auto-columns: max-content;
+   gap: 2em;
+}
+.nav__items4{
+   list-style: none;
+}
+
+
+.nav__menu4{
+   margin-left: auto;
+   cursor: pointer;
+   display: none;
+}
+.nav__menu4{
+   display: block;
+   width: 30px;
+
+}
+
+.nav__close4{
+   display: var(--show,none);
+}
+
+
+.hero__container4{
+   max-width: 800px;
+   --padding-container:0;
+   display: grid;
+   grid-auto-rows: max-content;
+   align-content: center;
+   gap: lem;
+   padding: bottom 100px; 
+   text-align: center;
+}
+
+.hero__title4{
+   font-size: 3rem;
+}
+.hero__paragraph4{
+   margin-bottom: 20px;
+}
+
+
+ /* ----------------------------------------------------------------lechuga-------------------------------------------------------------------------------------- */
+
+
+
+ #sliderLechuga {
+    margin: 0 auto;
+    width: 3000px;
+    height: 2000px;
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+    left: -950px;
+    bottom: -350px;
+
+ }
+ #sliderLechuga input[type=radio] {
+    display: none;
+ }
+ #sliderLechuga label {
+    cursor:pointer;
+    text-decoration: none;
+ }
+ #slidesLechuga {
+    padding: 10px;
+    border: 3px solid #ccc;
+    background-image: #fff;
+    position: relative;
+    z-index: 1;
+ }
+ #overflowLechuga {
+    width: 100%;
+    overflow: hidden;
+ }
+ #slide1Lechuga:checked ~ #slidesLechuga .innerLechuga {
+    margin-left: 0;
+ }
+ #slide2Lechuga:checked ~ #slidesLechuga .innerLechuga {
+    margin-left: -100%;
+ }
+ #slide3Lechuga:checked ~ #slidesLechuga .innerLechuga {
+    margin-left: -200%;
+ }
+ #slide4Lechuga:checked ~ #slidesLechuga.innerLechuga {
+    margin-left: -300%;
+ }
+ #slidesLechuga .innerLechuga {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 300px;
+ }
+ #slidesLechuga .slideLechuga {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+ }
+ #slidesLechuga .slide_1Lechuga {
+   background-color: darkolivegreen;
+   background-image:url('../images/Lechu1.png');;
+   background-repeat: no-repeat;
+ }
+ #slidesLechuga .slide_2Lechuga {
+   background-color: darkolivegreen;
+   background-image:url('../images/Lechu2.png');;
+   background-repeat: no-repeat;
+ }
+ #slidesLechuga .slide_3Lechuga {
+   background-color: darkolivegreen;
+   background-image:url('../images/Lechu3.png');;
+   background-repeat: no-repeat;
+ }
+ #slidesLechuga .slide_4Lechuga {
+   background-color: darkolivegreen;
+   background-image:url('../images/Lechu4.png');;
+   background-repeat: no-repeat;
+ 
+ }
+ #controlsLechuga {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+ }
+ #controlsLechuga label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+ }
+ #controlsLechuga label:hover {
+    opacity: 1;
+ }
+ #slide1Lechuga:checked ~ #controlsLechuga label:nth-child(2),
+ #slide2Lechuga:checked ~ #controlsLechuga label:nth-child(3),
+ #slide3Lechuga:checked ~ #controlsLechuga label:nth-child(4),
+ #slide4Lechuga:checked ~ #controlsLechuga label:nth-child(1) {
+    background: url('../images/rightarrow.svg') no-repeat;
+    float:right;
+    margin: 0 -50px 0 0;
+    display: block;
+ }
+ /* #slide1:checked ~ #controls label:nth-last-child(2),
+ #slide2:checked ~ #controls label:nth-last-child(3),
+ #slide3:checked ~ #controls label:nth-last-child(4),
+ #slide4:checked ~ #controls label:nth-last-child(1) {
+    background: url('../images/leftarrow.svg') no-repeat;
+    float:left;
+    margin: 0 0 0 -50px;
+    display: block;
+ } */
+ #bulletsLechuga {
+    margin: 150px 0 0;
+    text-align: center;
+ }
+ #bulletsLechuga label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius:100%;
+    background: #ccc;
+    margin: 0 10px;
+ }
+ #slide1Lechuga:checked ~ #bulletsLechuga label:nth-child(1),
+ #slide2Lechuga:checked ~ #bulletsLechuga label:nth-child(2),
+ #slide3Lechuga:checked ~ #bulletsLechuga label:nth-child(3),
+ #slide4Lechuga:checked ~ #bulletsLechuga label:nth-child(4) {
+    background: #444;
+ }
+ @media screen and (max-width: 900px) {
+    #slide1Lechuga:checked ~ #controlsLechuga label:nth-child(2),
+    #slide2Lechuga:checked ~ #controlsLechuga label:nth-child(3),
+    #slide3Lechuga:checked ~ #controlsLechuga label:nth-child(4),
+    #slide4Lechuga:checked ~ #controlsLechuga label:nth-child(1),
+    #slide1Lechuga:checked ~ #controlsLechuga label:nth-last-child(2),
+    #slide2Lechuga:checked ~ #controlsLechuga label:nth-last-child(3),
+    #slide3Lechuga:checked ~ #controlsLechuga label:nth-last-child(4),
+    #slide4Lechuga:checked ~ #controlsLechuga label:nth-last-child(1) {
+       margin: 0;
+    }
+    #slidesLechuga {
+       max-width: calc(100% - 140px);
+       margin: 0 auto;
+    }
+ }
+
+ /* ----------------------------------------------------------paginaCulantro--------------------------------------------------------------------- */
+
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width:90%;
+    max-width: 3000px ;
+    margin: 0 auto;
+    overflow: hidden;
+    
+    padding: var(--padding-container);
+
+}
+
+.hero5{
+   width: 100%;
+   height: 100vh;
+   min-height: 600px;
+   max-height: 800px;
+   position: relative;
+   display: grid;
+   grid-template-rows: 100px 1fr;
+   color: #fff;
+}
+
+.hero5::before{
+   content: "";
+
+   left: 0;
+   top: 0;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   position: fixed;
+   background-repeat: no-repeat;
+   background-size:cover;
+
+   width: 100%;
+   height: 100%;
+   background-image:url('../images/fondoCulantro.png');
+   background-attachment: fixed;
+
+   z-index: -1;
+}
+
+.nav5{
+   --padding-container:0;
+   height: 100%;
+   display: flex;
+   align-items: center;
+}
+
+.nav__title5{
+   font-weight: 300;
+   font-size: 150px;
+   position: relative;
+   top: 590px;
+   left: 15px;
+}
+
+.nav__link5{
+   margin-left: auto;
+   padding: 0;
+   display: grid;
+   grid-auto-flow: column;
+   grid-auto-columns: max-content;
+   gap: 2em;
+}
+.nav__items5{
+   list-style: none;
+}
+
+
+.nav__menu5{
+   margin-left: auto;
+   cursor: pointer;
+   display: none;
+}
+.nav__menu5{
+   display: block;
+   width: 30px;
+
+}
+
+.nav__close5{
+   display: var(--show,none);
+}
+
+
+.hero__container5{
+   max-width: 800px;
+   --padding-container:0;
+   display: grid;
+   grid-auto-rows: max-content;
+   align-content: center;
+   gap: lem;
+   padding: bottom 100px; 
+   text-align: center;
+}
+
+.hero__title5{
+   font-size: 3rem;
+}
+.hero__paragraph5{
+   margin-bottom: 20px;
+}
+
+
+/* -------------------------------------------------------------culantro------------------------------------------------------------------------------------------------ */
+
+
+
+
+
+#slider {
+    margin: 0 auto;
+    width: 3000px;
+    height: 2000px;
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+    left: -950px;
+    bottom: -350px;
+
+ }
+ #slider input[type=radio] {
+    display: none;
+ }
+ #slider label {
+    cursor:pointer;
+    text-decoration: none;
+ }
+ #slides {
+    padding: 10px;
+    border: 3px solid #ccc;
+    background-image: #fff;
+    position: relative;
+    z-index: 1;
+ }
+ #overflow {
+    width: 100%;
+    overflow: hidden;
+ }
+ #slide1:checked ~ #slides .inner {
+    margin-left: 0;
+ }
+ #slide2:checked ~ #slides .inner {
+    margin-left: -100%;
+ }
+ #slide3:checked ~ #slides .inner {
+    margin-left: -200%;
+ }
+ #slide4:checked ~ #slides .inner {
+    margin-left: -300%;
+ }
+ #slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 300px;
+ }
+ #slides .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+ }
+ #slides .slide_1 {
+    background-color: darkgreen;
+    background-image:url('../images/Cula1.png');;
+    background-repeat: no-repeat;
+ }
+ #slides .slide_2 {
+   background-color: darkgreen;
+   background-image: url('../images/Cula2.png');
+   background-repeat: no-repeat;
+ }
+ #slides .slide_3 {
+   background-color: darkgreen;
+   background-image: url('../images/Cula3.png');
+   background-repeat: no-repeat;
+ }
+ #slides .slide_4 {
+   background-color: darkgreen;
+   background-image: url('../images/Cula4.png');
+   background-repeat: no-repeat;
+ }
+ #controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+ }
+ #controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+ }
+ #controls label:hover {
+    opacity: 1;
+ }
+ #slide1:checked ~ #controls label:nth-child(2),
+ #slide2:checked ~ #controls label:nth-child(3),
+ #slide3:checked ~ #controls label:nth-child(4),
+ #slide4:checked ~ #controls label:nth-child(1) {
+    background: url('../images/rightarrow.svg') no-repeat;
+    float:right;
+    margin: 0 -50px 0 0;
+    display: block;
+ }
+ /* #slide1:checked ~ #controls label:nth-last-child(2),
+ #slide2:checked ~ #controls label:nth-last-child(3),
+ #slide3:checked ~ #controls label:nth-last-child(4),
+ #slide4:checked ~ #controls label:nth-last-child(1) {
+    background: url('../images/leftarrow.svg') no-repeat;
+    float:left;
+    margin: 0 0 0 -50px;
+    display: block;
+ } */
+ #bullets {
+    margin: 150px 0 0;
+    text-align: center;
+ }
+ #bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius:100%;
+    background: #ccc;
+    margin: 0 10px;
+ }
+ #slide1:checked ~ #bullets label:nth-child(1),
+ #slide2:checked ~ #bullets label:nth-child(2),
+ #slide3:checked ~ #bullets label:nth-child(3),
+ #slide4:checked ~ #bullets label:nth-child(4) {
+    background: #444;
+ }
+ @media screen and (max-width: 900px) {
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(1),
+    #slide1:checked ~ #controls label:nth-last-child(2),
+    #slide2:checked ~ #controls label:nth-last-child(3),
+    #slide3:checked ~ #controls label:nth-last-child(4),
+    #slide4:checked ~ #controls label:nth-last-child(1) {
+       margin: 0;
+    }
+    #slides {
+       max-width: calc(100% - 140px);
+       margin: 0 auto;
+    }
+ }
